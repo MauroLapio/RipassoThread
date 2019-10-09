@@ -4,7 +4,7 @@ public class Printer implements Runnable
 {
     public int Numero;
     
-    Printer()
+    public Printer()
     {
         //Costruttore vuoto
     }
