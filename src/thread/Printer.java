@@ -2,7 +2,7 @@ package thread;
 
 public class Printer implements Runnable
 {
-    public int Indice;
+    public int Numero;
     
     Printer()
     {
@@ -11,8 +11,13 @@ public class Printer implements Runnable
     
     @Override
     public void run()//Classe run che legge la variabile in Storage
-    {
-       Indice = Storage.getiIndice(); 
-       System.out.println("Indice: " + Indice);
+    {      
+       int i;
+        
+        for(i=0; i<50; i++)
+        {
+           Numero = Storage.getiNumero();
+           System.out.println("Numero: " + Numero);
+        }
     }
 }
