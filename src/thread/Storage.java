@@ -5,7 +5,8 @@ import java.util.concurrent.Semaphore;
 public class Storage 
 {
     public static int iNumero = 0; // Variabile condivisa
-    public static Semaphore s = new Semaphore(1);
+    public static Semaphore s1 = new Semaphore(1);
+    public static Semaphore s2 = new Semaphore(0);
     
     public Storage() // Costruttore vuoto
     {
