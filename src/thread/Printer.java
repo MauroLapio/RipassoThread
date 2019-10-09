@@ -12,7 +12,7 @@ public class Printer implements Runnable
     @Override
     public void run()//Classe run che legge la variabile in Storage
     {      
-       int i;
+        int i;
         
         for(i=0; i<50; i++)
         {
