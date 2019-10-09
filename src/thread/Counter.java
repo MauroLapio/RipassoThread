@@ -11,7 +11,7 @@ public class Counter implements Runnable
         int iNumero; //numero da incrementare
         int i;
         
-        for(i=0;i<50;i++)
+        for(i=0;i<500;i++)
         {
             try
             {

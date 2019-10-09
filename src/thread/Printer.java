@@ -14,7 +14,7 @@ public class Printer implements Runnable
     {
         int i;//Inizializzazione variabile contatore
         
-        for(i=0;i<50;i++)
+        for(i=0;i<500;i++)
         {
             try
             {
