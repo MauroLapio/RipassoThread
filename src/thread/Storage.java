@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package thread;
-
-/**
- *
- * @author informatica
- */
-public class Storage {
+public class Storage 
+{
+    public int iIndice; // Variabile condivisa
+    
+    public int getiIndice() // Metodo che ritorna il contenuto della variabile
+    {
+        return iIndice;
+    }
+    public void setiIndice(int iIndice) // Metodo che ottiene il valore dal Counter e lo imposta come variabile
+    {
+        this.iIndice=iIndice;
+    }
     
 }
