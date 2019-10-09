@@ -1,9 +1,13 @@
 package thread;
 public class Storage 
 {
-    public int iIndice; // Variabile condivisa
+    public static int iIndice = 0; // Variabile condivisa
     
-    public int getiIndice() // Metodo che ritorna il contenuto della variabile
+    public Storage()
+    {
+       this.iIndice = iIndice;
+    }
+    public static int getiIndice() // Metodo che ritorna il contenuto della variabile
     {
         return iIndice;
     }
