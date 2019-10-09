@@ -10,14 +10,19 @@ public class Printer implements Runnable
     }
     
     @Override
-    public void run()//Classe run che legge la variabile in Storage
+    synchronized public void run()//Classe run che legge la variabile in Storage
     {
         int i;//Inizializzazione variabile contatore
-        
-        for(i=0; i<50; i++)//Ciclo per mettere a video il risultato
+        Numero = Storage.getiNumero();//Chiamata che prende il numero da storage
+        try
         {
-           Numero = Storage.getiNumero();//Chiamata che prende il numero da storage
-           System.out.println("Numero: " + Numero);//Print del numero
+            Storage.s.acquire();
+            System.out.println("Output numero: " + Numero);//Print del numero
+            Storage.s.release();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Errore: "+ e);
         }
     }
 }
