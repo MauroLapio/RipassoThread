@@ -15,5 +15,4 @@ public class Storage
     {
         Storage.iNumero=iNumero;
     }
-    
 }
