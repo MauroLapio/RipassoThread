@@ -1,19 +1,19 @@
 package thread;
 public class Storage 
 {
-    public static int iIndice = 0; // Variabile condivisa
+    public static int iNumero = 0; // Variabile condivisa
     
-    public Storage()
+    public Storage() // Costruttore vuoto
     {
-       this.iIndice = iIndice;
+       
     }
-    public static int getiIndice() // Metodo che ritorna il contenuto della variabile
+    public static int getiNumero() // Metodo che ritorna il contenuto della variabile
     {
-        return iIndice;
+        return iNumero;
     }
-    public void setiIndice(int iIndice) // Metodo che ottiene il valore dal Counter e lo imposta come variabile
+    public static void setiNumero(int iNumero) // Metodo che ottiene il valore dal Counter e lo imposta come variabile
     {
-        this.iIndice=iIndice;
+        Storage.iNumero=iNumero;
     }
     
 }
