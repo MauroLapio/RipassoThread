@@ -2,18 +2,17 @@ package thread;
 
 public class Printer implements Runnable
 {
-    Storage stg = new Storage();
     public int Indice;
     
-    Printer(Storage stg)//Inizializzazione stg
+    Printer()
     {
-        this.stg = stg;
+        //Costruttore vuoto
     }
     
     @Override
     public void run()//Classe run che legge la variabile in Storage
     {
-       Indice = stg.getiIndice(); 
+       Indice = Storage.getiIndice(); 
        System.out.println("Indice: " + Indice);
     }
 }
